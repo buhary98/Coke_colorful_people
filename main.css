@@ -1,0 +1,376 @@
+/* ==================
+Global styles
+================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+:root {
+    --fanta-blue: #111E72;
+    --fanta-green: #73AA23;
+    --background: #EB973F;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body {
+    background: var(--background);
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+/* ==================
+Main Page Mobile styles
+================== */
+
+@media only screen and (max-width: 600px) {
+    .mobile {
+        display: block;
+    }
+
+    .mobile img {
+        width: 100%;
+    }
+
+    .section1--mobile {
+        background-image: url(assets/backgrounds/background-fanta-orange-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .section2--mobile {
+        background-image: url(assets/backgrounds/background-fanta-orange-mask-mobile.png);
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 1rem;
+    }
+
+    .section1--mobile p {
+        font-family: "Unity Text";
+        text-transform: uppercase;
+        padding: 2rem;
+    }
+
+    .whatsapp--mobile {
+        max-width: 50vw;
+    }
+
+    .mobile .text--img {
+        max-width: 85%;
+    }
+
+    .section2--mobile {
+        padding: 2rem;
+    }
+
+    .mobile .group3 {
+        max-width: 80%;
+        padding-bottom: 2.5rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mobile .section2-links>img {
+        margin-left: 0px;
+        width: 70%;
+    }
+
+    .mobile .section2-links {
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+
+/* ==================
+Section 1 styles
+================== */
+
+.section1 {
+    background-image: url(assets/backgrounds/background-fanta-orange.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section1--header {
+    max-width: 70%;
+}
+
+.section1--header {
+    padding: 2rem 1rem 0 1rem;
+}
+
+.group1 {
+    max-width: 70%;
+    padding: 1.5rem;
+}
+
+.group1, .group1--mobile {
+    padding-bottom: 1.5rem;
+}
+
+.section1 p {
+    font-family: "Unity Text";
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+/* ==================
+Section 2 styles
+================== */
+
+.section2 {
+    background-image: url(assets/backgrounds/section2-mast.png), url(assets/backgrounds/background-fanta-orange.png);
+    background-repeat: no-repeat no-repeat;
+    background-size: cover cover;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 10%;
+}
+
+.section2-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.section2-links>img {
+    margin-left: .75rem;
+}
+
+.section2-links p {
+    font-family: "Hackney";
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.group3 {
+    display: flex;
+    gap: 3rem;
+    /* padding-bottom: 3rem; */
+    margin-bottom: 1rem;
+}
+
+.group3 {
+    display: flex;
+    gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.group3>div {
+    background-color: var(--fanta-blue);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.group3 a {
+    width: 100%;
+}
+
+.group3 button {
+    background-color: var(--fanta-green);
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-family: "Avenir";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.group3 button:hover {
+    cursor: pointer;
+}
+
+/* ==================
+Footer styles 
+================== */
+
+footer {
+    background-color: var(--fanta-blue);
+    padding: 1.5rem;
+}
+
+footer p, footer a {
+    font-family: "Avenir";
+    margin: auto;
+    padding-bottom: 1rem;
+    max-width: 420px;
+}
+
+footer span {
+    margin: 0 2rem;
+}
+
+@media screen and (max-width: 600px) {
+    footer span {
+        margin: 0 0.5rem;
+    }
+}
+
+/* ==================
+T&C styles 
+================== */
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.tnc .container {
+    width: 100%;
+}
+
+.splitter {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* .tnc--top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+} */
+
+.tnc {
+    display: flex;
+    flex-direction: column;
+    font-family: "Unity Text";
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.tnc * {
+    text-align: left;
+}
+
+.tnc hr, .privacy hr {
+    margin-top: 1.5rem;
+    border: 1px solid lightgray;
+}
+
+.tnc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* padding-left: 1rem; */
+}
+
+.tnc-top h2 {
+    /* text-align: center; */
+    padding-bottom: 1rem;
+}
+
+li {
+    margin: 0 0 1rem 2rem;
+}
+
+ul li {
+    list-style: disc;
+}
+
+th, td {
+    padding-right: 1rem;
+}
+
+p {
+    padding: 1rem 0;
+}
+
+.list-lower-alpha li {
+    list-style-type: lower-alpha;
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .splitter {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+}
+
+/* ==================
+Privacy styles 
+================== */
+
+.privacy .container {
+    width: 100%;
+}
+
+.privacy {
+    display: flex;
+    flex-direction: column;
+    font-family: "Unity Text";
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.privacy * {
+    text-align: left;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+.drop-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.drop-top:hover {
+    cursor: pointer;
+}
+
+.drop-bottom {
+    display: none;
+}
+
+.arrow {
+    color: white;
+    border-style: solid;
+    border-width: 0.25em 0.25em 0 0;
+    content: '';
+    display: inline-block;
+    height: 0.45em;
+    left: 0.15em;
+    position: relative;
+    top: 0.15em;
+    transform: rotate(135deg);
+    vertical-align: top;
+    width: 0.45em;
+    transition: 0.25s;
+}
